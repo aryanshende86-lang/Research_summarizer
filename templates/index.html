@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Research Paper Summarizer</title>
+    <style>
+       
+        body { 
+            font-family: sans-serif; 
+            max-width: 700px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        input[type="text"] { 
+            width: 70%; 
+            padding: 10px; 
+            font-size: 16px; 
+        }
+        button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+        }
+        .results-box { 
+            background: #f4f4f4; 
+            padding: 20px; 
+            margin-top: 25px; 
+            border-left: 4px solid #007bff; 
+            white-space: pre-wrap; 
+        }
+        .results-box ul { padding-left: 20px; }
+        .results-box li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <h2> Academic Insights Dashboard</h2>
+    <p>Type a research topic below to pull raw data from arXiv, filter it using Beautiful Soup, and clean it with Gemini AI.</p>
+
+    <form action="/summarize" method="POST">
+        <input type="text" name="topic" value="{{ topic if topic else '' }}" placeholder="e.g., Quantum Computing" required>
+        <button type="submit">Summarize</button>
+    </form>
+
+    {% if summary %}
+    <div class="results-box">
+{{ summary | safe }}
+    </div>
+    {% endif %}
+
+</body>
+</html>
