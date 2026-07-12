@@ -28,6 +28,9 @@ def summarize():
 
     soup = BeautifulSoup(response.text, 'xml')
     entries = soup.find_all('entry')
+ 
+    if not entries:
+        return render_template('index.html', error=f"No research papers found for '{topic}'. Please try another topic.")
     
     cleaned_papers_text = ""
     for index, entry in enumerate(entries, start=1):
