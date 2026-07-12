@@ -9,7 +9,12 @@ import markdown
 load_dotenv()
 
 app = Flask(__name__)
-client = genai.Client()
+api_key = os.environ.get("GEMINI_API_KEY")
+if not api_key:
+    print("ERROR: GEMINI_API_KEY is missing or blank in your .env file!")
+    exit()
+
+client = genai.Client(api_key=api_key)
 
 @app.route('/')
 def home():
