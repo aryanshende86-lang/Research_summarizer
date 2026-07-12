@@ -17,14 +17,16 @@ Enter any academic topic into the search field to fetch real-time papers from ar
 ### 📊 AI Summary Output
 The dashboard renders structured breakdowns using markdown processing, highlighting objectives, methodologies, and limitations.
 
-![alt text](image-2.png)
+<img width="1103" height="825" alt="image" src="https://github.com/user-attachments/assets/65591175-83db-4c73-a05f-11e57157e86b" />
+
+<img width="1130" height="598" alt="image" src="https://github.com/user-attachments/assets/9e2e16a7-824c-484d-b9e5-86096bfe506c" />
 
 ### Error Hnadling and Alerts
 It shows errors or alerts you whenever you write invalid subjects and when you try to summarize without giving any subject.
 
-![alt text](image.png)
+<img width="1091" height="541" alt="image" src="https://github.com/user-attachments/assets/8dcf5004-d662-4c11-9531-c63ca3a23fe9" />
 
-![alt text](image-1.png)
+<img width="1057" height="441" alt="image" src="https://github.com/user-attachments/assets/d85dfab2-a94a-43bd-a072-7a472a86d2ae" />
 
 ## ⚡ Features
 
