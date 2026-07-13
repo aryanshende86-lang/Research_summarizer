@@ -6,7 +6,7 @@ An agile web dashboard built with Flask and Gemini AI that pulls raw academic da
 ## 🌐 Live Demo
 
 You can access the live, deployed version of the application here:
- [View Live Web Application](researchsummarizer-production.up.railway.app)
+ [View Live Web Application](https://researchsummarizer-production.up.railway.app)
 ## Application Preview
 
 ### Main Dashboard & Query Interface
